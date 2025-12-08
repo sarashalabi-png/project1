@@ -30,6 +30,44 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
 }
+body {
+  background: var(--netural-white);
+}
+
+section {
+  min-height: 80vh;
+  padding: 10rem 7% 2rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.section-title {
+  font-size: var(--featured-title-fs);
+  color: var(--netural-black);
+}
+
+.learn-more {
+  background: transparent;
+  border: 2px solid var(--primary-blue);
+  padding: 0.3rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-bottom: 0.5rem;
+  color: var(--netural-black);
+}
+
+.learn-more:hover {
+  background: var(--primary-blue);
+  color: var(--netural-white);
+  font-weight: 600;
+  box-shadow: 1px 1px 5px var(--primary-blue);
+}
 .header {
   position: fixed;
   top: 0;
