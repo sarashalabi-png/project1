@@ -4,7 +4,10 @@
   --netural-black: #000000;
   --netural-white: #ffffff;
   --featured-cards-name: #a1aabd;
---icons-fs: 1.4rem;
+  
+
+/* This is the font size  */
+  --icons-fs: 1.4rem;
   --nav-fs: 1.1rem;
   --featured-title-fs: 4rem;
   --featured-books-card-fs: 1.2rem;
