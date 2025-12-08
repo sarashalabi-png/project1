@@ -30,3 +30,74 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
 }
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.5rem 7%;
+  background: var(--netural-white);
+  z-index: 100;
+  box-shadow: 0 2px 7px var(--primary-blue);
+  margin-bottom: 2rem;
+}
+
+.header .logo {
+  width: 6rem;
+  cursor: default;
+}
+
+.header .navbar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header .navbar .nav-links {
+  position: relative;
+  font-size: var(--nav-fs);
+  color: var(--netural-black);
+}
+
+.header .navbar .nav-links::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: var(--primary-blue);
+  transition: 0.3s;
+}
+
+.header .navbar .nav-links:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.header .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: var(--icons-fs);
+  color: var(--netural-black);
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.header .icons i:hover {
+  color: var(--primary-blue);
+}
+
+.header .icons .search-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.header .icons i {
+  margin-left: 0.5rem;
+}
