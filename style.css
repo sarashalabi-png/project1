@@ -4,4 +4,29 @@
   --netural-black: #000000;
   --netural-white: #ffffff;
   --featured-cards-name: #a1aabd;
+--icons-fs: 1.4rem;
+  --nav-fs: 1.1rem;
+  --featured-title-fs: 4rem;
+  --featured-books-card-fs: 1.2rem;
+  --john-deo-fs: 0.8rem;
+  --category-fs: 0.9rem;
+  --old-price-fs: 0.8rem;
+}
+
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+border: none;
+outline: none;
+text-decoration: none;
+list-style: none;
+font-family: "Poppins", sans-serif;
+scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
 }
