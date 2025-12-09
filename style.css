@@ -1,0 +1,348 @@
+:root {
+  --primary-blue: #089da1;
+  --text-gray: #676767;
+  --netural-black: #000000;
+  --netural-white: #ffffff;
+  --featured-cards-name: #a1aabd;
+  
+
+/* This is the font size  */
+  --icons-fs: 1.4rem;
+  --nav-fs: 1.1rem;
+  --featured-title-fs: 4rem;
+  --featured-books-card-fs: 1.2rem;
+  --john-deo-fs: 0.8rem;
+  --category-fs: 0.9rem;
+  --old-price-fs: 0.8rem;
+}
+
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+border: none;
+outline: none;
+text-decoration: none;
+list-style: none;
+font-family: "Poppins", sans-serif;
+scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  background: var(--netural-white);
+}
+
+section {
+  min-height: 80vh;
+  padding: 10rem 7% 2rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.section-title {
+  font-size: var(--featured-title-fs);
+  color: var(--netural-black);
+}
+
+.learn-more {
+  background: transparent;
+  border: 2px solid var(--primary-blue);
+  padding: 0.3rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-bottom: 0.5rem;
+  color: var(--netural-black);
+}
+
+.learn-more:hover {
+  background: var(--primary-blue);
+  color: var(--netural-white);
+  font-weight: 600;
+  box-shadow: 1px 1px 5px var(--primary-blue);
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.5rem 7%;
+  background: var(--netural-white);
+  z-index: 100;
+  box-shadow: 0 2px 7px var(--primary-blue);
+  margin-bottom: 2rem;
+}
+
+.header .logo {
+  width: 6rem;
+  cursor: default;
+}
+
+.header .navbar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header .navbar .nav-links {
+  position: relative;
+  font-size: var(--nav-fs);
+  color: var(--netural-black);
+}
+
+.header .navbar .nav-links::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: var(--primary-blue);
+  transition: 0.3s;
+}
+
+.header .navbar .nav-links:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.header .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: var(--icons-fs);
+  color: var(--netural-black);
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.header .icons i:hover {
+  color: var(--primary-blue);
+}
+
+.header .icons .search-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.header .icons i {
+  margin-left: 0.5rem;
+}
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("assets/image/reading.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 8rem 7% 2rem;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  opacity: 0.88;
+  z-index: 0;
+}
+
+.hero .welcome {
+  position: relative;
+  z-index: 1;
+  width: 50%;
+  padding: 5rem;
+}
+
+.hero .welcome h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.hero .welcome p {
+  margin: 2rem 0;
+  line-height: 1.5;
+  color: #333;
+}
+
+.hero .books {
+  position: relative;
+  z-index: 1;
+  width: 50%;
+  text-align: center;
+}
+
+.hero .books .shelf-img {
+  margin-top: -2rem;
+  width: 100%;
+  max-width: 280rem;
+  z-index: 0;
+  position: relative;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--primary-blue);
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: teal;
+}
+.properties {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 2rem 0;
+  gap: 2rem;
+}
+
+.properties .card {
+  background: #fff;
+  border: 0.5rem solid rgba(32, 178, 170, 0.2);
+  border-radius: 0.8rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 32rem;
+  text-align: center;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.properties .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.properties .card i {
+  font-size: 4rem;
+  color: var(--primary-blue);
+  margin-bottom: 1.5rem;
+}
+
+.properties .card h3 {
+  margin: 1rem 0;
+}
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5rem 5rem;
+}
+
+.about-us .about-img {
+  width: 50%;
+  text-align: center;
+}
+
+.about-us .about-img img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.about-us .about-text {
+  width: 50%;
+  padding: 2rem;
+}
+
+.about-us .about-text h2 {
+  font-size: 4.2rem;
+  margin-bottom: 2rem;
+}
+
+.about-us .about-text p {
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.about-us .about-text .btn {
+  background-color: var(--primary-blue);
+}
+
+.about-us .about-text .btn:hover {
+  background-color: teal;
+}
+.reviews-section .section-title {
+  text-align: center;
+  font-size: 5.2rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.reviews-section .reviews {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 5rem auto;
+  padding: 2rem;
+}
+
+.reviews-section .reviews .review-card {
+  background: #fff;
+  border: 0.1rem solid var(--primary-blue);
+  border-radius: 0.8rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 30rem;
+  text-align: left;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+  position: relative;
+}
+
+.reviews-section .reviews .review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.reviews-section .reviews .review-card img {
+  width: 30%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
+.reviews-section .reviews .review-card h3 {
+  margin: 1rem 0;
+}
+
+.reviews-section .reviews .review-card p {
+  font-size: 1.4rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.reviews-section .reviews .review-card .stars {
+  margin-top: 1rem;
+  color: var(--primary-blue);
+}
+
+.reviews-section .reviews .review-card .stars i {
+  margin: 0 0.2rem;
+}
