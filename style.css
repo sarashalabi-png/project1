@@ -285,6 +285,88 @@ section {
 .about-us .about-text .btn:hover {
   background-color: teal;
 }
+.featured .cards-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 9%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+  gap: 2.2rem;
+  padding: 0 2rem 2rem;
+  max-width: 130rem;
+}
+
+.featured .cards-container::-webkit-scrollbar-thumb {
+  background-color: var(--primary-blue);
+  border-radius: 4px;
+}
+
+.featured .cards-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.featured .cards-container::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 4px;
+}
+
+.featured .cards-container .card {
+  border: 1px solid var(--text-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featured .cards-container .card:hover {
+  border: 1px solid var(--primary-blue);
+  box-shadow: 1px 1px 5px var(--primary-blue);
+}
+
+.featured .cards-container .card .card-img {
+  width: 7.5rem;
+  margin: 0.6rem 2rem 0.5rem;
+}
+
+.featured .cards-container .card .featured-books {
+  color: var(--netural-black);
+  font-size: var(--featured-books-card-fs);
+}
+
+.featured .cards-container .card .John-Deo {
+  color: var(--featured-cards-name);
+  font-size: var(--john-deo-fs);
+}
+
+.featured .cards-container .card .category {
+  display: inline-block;
+  color: var(--primary-blue);
+  font-size: var(--category-fs);
+  padding: 0 2rem;
+  margin-bottom: 0.3rem;
+  text-align: center;
+}
+
+.featured .cards-container .card .price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.2;
+}
+
+.featured .cards-container .card .new-price {
+  font-weight: bold;
+}
+
+.featured .cards-container .card .old-price {
+  font-size: var(--old-price-fs);
+  margin: -0.5rem 0 0.5rem 3.5rem;
+  text-decoration: line-through;
+}
+
+.featured .cards-container .card .learn-more {
+  margin-bottom: 0.6rem;
+}
 .reviews-section .section-title {
   text-align: center;
   font-size: 5.2rem;
