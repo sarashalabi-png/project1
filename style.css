@@ -507,3 +507,59 @@ section {
 .digital-book .btn:hover {
   background-color: teal;
 }
+.blog .blog-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10rem;
+}
+
+.blog .blog-container .blog-card {
+  box-shadow: 1px 1px 5px var(--text-gray);
+}
+
+.blog .blog-container .blog-card:hover {
+  background: var(--primary-blue);
+  box-shadow: 0 0 4px 1px var(--primary-blue);
+}
+
+.blog .blog-container .blog-card:hover .bloger,
+.blog .blog-container .blog-card:hover .blog-paragraph,
+.blog .blog-container .blog-card:hover .bxs-calendar,
+.blog .blog-container .blog-card:hover .blog-icons i:nth-child(2) {
+  color: var(--netural-white);
+}
+
+.blog .blog-container .blog-card .card-img-blog {
+  width: 27rem;
+  height: 18rem;
+  margin-bottom: 0.5rem;
+  object-fit: cover;
+}
+
+.blog .blog-container .blog-card .blog-padding {
+  padding: 0 1rem 1rem;
+}
+
+.blog .blog-container .blog-card .bloger {
+  color: var(--primary-blue);
+  margin-bottom: 0.5rem;
+}
+
+.blog .blog-container .blog-card .blog-paragraph {
+  max-width: 25rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+  line-height: 1.3;
+  color: var(--netural-black);
+}
+
+.blog .blog-container .blog-card .blog-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog .blog-container .blog-card .bxs-calendar,
+.blog .blog-container .blog-card .blog-icons i:nth-child(2) {
+  color: var(--primary-blue);
+}
