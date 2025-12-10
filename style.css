@@ -675,3 +675,169 @@ section {
   color: var(--primary-blue);
   font-weight: bold;
 }
+
+/* ---------- MEDIA QUERIES ---------- */
+/* IPAD PRO QUERIES */
+@media (max-width: 102.5rem) {
+  :root {
+    --featured-title-fs: 3.5rem;
+  }
+
+  .featured .cards-container {
+    grid-auto-columns: minmax(12rem, 40%);
+    gap: 1.5rem;
+    max-width: 80rem;
+  }
+
+  .arrivals .arrival-container {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+  }
+
+  .arrivals .arrival-container > :last-child:nth-child(3n + 1) {
+    grid-column: 2;
+  }
+
+  .arrivals .arrival-container .arrival-card .card-img-arrival {
+    width: 7rem;
+  }
+
+  .arrivals .arrival-container .arrival-card .arrival-btn {
+    font-size: 0.8rem;
+  }
+
+  .blog .blog-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4.5rem;
+    row-gap: 1.5rem;
+  }
+
+  .blog .blog-container > :nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero .welcome,
+  .hero .books {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .properties {
+    flex-wrap: wrap;
+  }
+
+  .about-us {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-us .about-img,
+  .about-us .about-text {
+    width: 100%;
+  }
+
+  .reviews .review-card {
+    max-width: 45%;
+  }
+
+  .digital-book {
+    height: 25rem;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .digital-book .btn {
+    margin-top: 15rem;
+    margin-left: 3rem;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+  }
+
+  .footer .footer-container {
+    flex-wrap: wrap;
+  }
+
+  .footer .footer-col {
+    flex: 1 1 45%;
+    min-width: 22rem;
+  }
+}
+
+/* IPHONE XR & small devices */
+@media (max-width: 415px) {
+  :root {
+    --featured-title-fs: 2.5rem;
+  }
+
+  section {
+    min-height: 0;
+  }
+
+  .header .navbar {
+    display: none;
+  }
+
+  .header .logo {
+    width: 5rem;
+  }
+
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .properties {
+    flex-direction: column;
+  }
+
+  .featured .cards-container {
+    max-width: 20rem;
+  }
+
+  .arrivals {
+    padding-top: 5rem;
+  }
+
+  .arrivals .arrival-container {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+
+  .arrivals .arrival-container .arrival-card {
+    padding: 0.3rem 1.5rem;
+  }
+
+  .arrivals .arrival-container .arrival-card .card-img-arrival {
+    width: 10rem;
+  }
+
+  .reviews .review-card {
+    max-width: 100%;
+  }
+
+  .footer .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .digital-book {
+    height: 20rem;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .digital-book .btn {
+    margin-top: 6rem;
+    margin-left: -2rem;
+    font-size: 0.8rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
