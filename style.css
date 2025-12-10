@@ -367,6 +367,59 @@ section {
 .featured .cards-container .card .learn-more {
   margin-bottom: 0.6rem;
 }
+.arrivals .arrival-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 5.5rem;
+  row-gap: 1.5rem;
+}
+
+.arrivals .arrival-container .arrival-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--text-gray);
+  padding: 0.5rem 3rem;
+  cursor: pointer;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.arrivals .arrival-container .arrival-card:hover {
+  border: 1px solid var(--primary-blue);
+  box-shadow: 1px 1px 5px var(--primary-blue);
+}
+
+.arrivals .arrival-container .arrival-card .card-img-arrival {
+  width: 8.5rem;
+  margin-bottom: 0.4rem;
+  transition: transform 0.3s ease;
+}
+
+.arrivals .arrival-container .arrival-card .card-img-arrival:hover {
+  transform: scale(1.05);
+}
+
+.arrivals .arrival-container .arrival-card .new-arrivals {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  color: var(--netural-black);
+}
+
+.arrivals .arrival-container .arrival-card .stars {
+  margin-bottom: 0.3rem;
+}
+
+.arrivals .arrival-container .arrival-card .bxs-star,
+.arrivals .arrival-container .arrival-card .bxs-star-half {
+  color: var(--primary-blue);
+}
+
+.arrivals .arrival-container .arrival-card .arrival-btn {
+  font-size: 0.9rem;
+}
+
 .reviews-section .section-title {
   text-align: center;
   font-size: 5.2rem;
